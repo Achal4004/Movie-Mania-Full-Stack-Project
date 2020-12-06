@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <!-- cdn font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="shortcut icon" href="../images/brand-logo-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/movie.css">
+    <title>Movie Mania</title>
+</head>
+<body>
+    <nav class="header">
+        <i class="fa fa-bars bars" onclick=menu()></i>
+        <h3 class="brand-name">Movie</h3>
+        <img class="brand-logo" src="../images/brand_img.png" alt="brand-logo">
+        <h3 class="brand-name">Mania</h3>
+        <a href="./search.html"><i class="fa fa-search search"><span>Search Movies</span></i></a>
+        <ul class="links">
+            <li><a href="../index.html" ><i class="fa fa-home"></i>Home</a></li>
+            <hr noshade="">
+            <li><a href="#"><i class="fa fa-film"></i>Movies</a></li>
+            <hr noshade="">
+            <li><a href="#"><i class="fa fa-rss"></i>Blog</a></li>
+            <hr noshade="">
+            <hr noshade="">
+            <li><a href="./signin.html"><i class="fa fa-sign-in"></i>Admin</a></li>
+        </ul>
+    </nav>
+    <nav class="home-nav">
+        <hr noshade="">
+        <ul>
+            <!--all ids for home nav must we in small letter-->
+            <li><i class="fa fa-tags"></i><span>Genre</span>
+                <ul>
+                    <li id="all">All</li>
+                    <li id="action">Action</li>
+                    <li id="drama">Drama</li>
+                    <li id="comedy">Comedy</li>
+                    <li id="thriller">Thriller</li>
+                    <li id="sci-fi">Sci-fi</li>
+                    <li id="adventure">Adventure</li>
+                    <li id="horror">Horror</li>
+                    <li id="animated">Animated</li>
+                    <li id="suspense">Suspense</li>
+                </ul>
+            </li>
+            <li><i class="fa fa-sort-amount-asc"></i><span>Sort By</span>
+                <ul>
+                    <li id="name">Name</li>
+                    <li id="time">Time</li>
+                    <li id="popularity">Popularity</li>
+                </ul>
+            </li>
+            <li><i class="fa fa-language"></i><span>Language</span>
+                <ul>
+                    <li id="any">Any</li>
+                    <li id="hindi">Hindi</li>
+                    <li id="english">English</li>
+                </ul>
+            </li>
+        </ul>
+        <hr noshade="">
+    </nav>
+
+    <script src="../javaScript/header.js"></script>
+    <main>
+        <div id="movie-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#movie-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#movie-carousel" data-slide-to="1"></li>
+                <li data-target="#movie-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item banner active">
+                    <img class="d-block w-100" src="../images/carousel-images/avengers.jpg" alt="First slide">                      
+                    <div class="carousel-caption">
+                        <h3>The Avengers</h3>
+                        <p>Marvel Studios delivers the ultimate comic-book film, which ties together such characters as Iron Man, Captain America, The Hulk, and Thor for a big-screen franchise team-up like no other.</p>
+                        <a href="mdetail.html?id=20201023002" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Watch Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item banner">
+                    <img class="d-block w-100" src="../images/carousel-images/zootopia.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h3>Zootopia</h3>
+                        <p>In a city inhabited by anthropomorphic animals who have abandoned traditional predator/prey roles in favor of civilized coexistence.</p>
+                        <a href="mdetail.html?id=20201023004" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Watch Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item banner">
+                    <img class="d-block w-100" src="../images/carousel-images/ironman.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Iron Man</h3>
+                        <p>From Marvel Studios and Paramount Pictures comes Iron Man, an action-packed take on the tale of wealthy philanthropist Tony Stark (Robert Downey Jr.), who develops an invulnerable robotic suit to fight the throes of evil.</p>
+                        <a href="mdetail.html?id=20201023001" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="heading" class="genre-heading"><span>All</span> Movies</h1>
+        <div class="content">
+            <!--movie content added dynamicaly-->
+            <div class="show-more">
+                <button class="btn btn-large btn-outline-primary " onclick=showMore()>Show More</button>
+            </div>
+        </div>
+        <!-- <div class="show-more">
+            <button class="btn btn-large btn-outline-primary " onclick=showMore()>Show More</button>
+        </div> -->
+    </main>
+    <footer>
+        <div class="top">
+            <div class="left-side">
+                <ul class="contact">
+                    <li><a href="#"><i class="fa fa-map-marker"></i>SCO-75, Chandigarh, India</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>+919797979733</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>support@moviemania.com</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <div class="about">
+                    <h4>About the website</h4>
+                    <p>Movie Manina is a streaming servie that offers a wide varitey of award-winning movies and more, on thousands of internet-connected devices.you can watch as much as you want - all for free.</p>
+                </div>
+                <div class="social-container">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p><a href="#">&copy 2020 Copyright: Moviemania.com</a></p>
+        </div>
+    </footer>
+    <script src="../javaScript/data/movieList.js"></script>
+    <script src="../javaScript/movie.js"></script>
+    <!-- bootstrap js strat -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--bootstrap js end-->
+</body>
+</html>
