@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <!-- cdn font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./images/brand-logo-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Movie Mania</title>
+</head>
+<body>
+    <nav class="header">
+        <i class="fa fa-bars bars" onclick=menu()></i>
+        <h3 class="brand-name">Movie</h3>
+        <img class="brand-logo" src="./images/brand_img.png" alt="brand-logo">
+        <h3 class="brand-name">Mania</h3>
+        <a href="pages/search.html"><i class="fa fa-search search"><span>Search Movies</span></i></a>
+        <ul class="links">
+            <li><a href="#" ><i class="fa fa-home"></i>Home</a></li>
+            <hr noshade="">
+            <li><a href="pages/movie.html"><i class="fa fa-film"></i>Movies</a></li>
+            <hr noshade="">
+            <li><a href="#"><i class="fa fa-rss"></i>Blog</a></li>
+            <hr noshade="">
+            <hr noshade="">
+            <li><a href="pages/signin.html"><i class="fa fa-sign-in"></i>Login</a></li>
+        </ul>
+    </nav>
+    <script src="javaScript/header.js"></script>
+    <main>
+        <!-- banner section -->
+        <div class="banner">
+            <img src="./images/banner.jpg" alt="banner">
+            <div class="heading-1">
+                <h1>Welcome in Movie Mania</h1>
+                <p>This website provides the direct links to watch any movie anytime for Free. We believe that our customers deserves the highest quility of movies and we are committed for that.</p>
+                <a href="./pages/movie.html" class='btn btn-success btn-large'>Start Now <i class="fa fa-long-arrow-right"></i></a> 
+            </div>
+        </div>
+        <!--Our feature section-->
+        <div class="features">
+            <h2>Our Features</h2>
+            <ul class="feature-list">
+                <li>
+                    <i class="fa fa-star fa-2x"></i>
+                    <h5>Awesome interface</h5>
+                    <p>This website provides better user interface for fast and efficient experience.</p>
+                </li>
+                <li>
+                    <i class="fa fa-database fa-2x"></i>
+                    <h5>Large Collection</h5>
+                    <p>1000+ collection of different types of  movies and web series.</p>
+                </li>
+                <li>
+                    <i class="fa fa-rupee fa-2x"></i>
+                    <h5>Free</h5>
+                    <p>This website provides the direct links to watch any movie for Free.</p>
+                </li>
+            </ul>
+        </div>
+        <!--team section-->
+        <div class="team">
+            <h2>Our Creative Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="./images/team/member-1.jpg" alt="member-1">
+                    <div class="about-member">
+                        <h5>Achal Paliwal</h5>
+                        <p>Team member</p>
+                        <p>A self-motivated IT professional with huge knowledge and proficiency in JavaScript, HTML, CSS, and mobile responsive web development.</p>
+                        <div class="social">
+                            <a href="https://twitter.com/AchalPaliwal1"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/achal-paliwal-09102516b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7jaxyjmPSy6E0%2Bhdup6ZNA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/achal.paliwal/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/member-2.jpg" alt="member-2">
+                    <div class="about-member">
+                        <h5>Prashant Agrawal</h5>
+                        <p>Team member</p>
+                        <p>A self-motivated IT professional with huge knowledge and proficiency in JavaScript, HTML, CSS, and mobile responsive web development.</p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/team/member-3.jpg" alt="member-3">
+                    <div class="about-member">
+                        <h5>Shashank Gupta</h5>
+                        <p>Team member</p>
+                        <p>A self-motivated IT professional with huge knowledge and proficiency in JavaScript, HTML, CSS, and mobile responsive web development.</p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><a href="#" class="btn btn-large btn-outline-secondary">Learn More</a></p>
+        </div>
+        <!--video tutorial section-->
+        <div class="video-tutorial-section">
+            <h2>How to Watch Movies</h2>
+            <div  class="video-tutorial">
+                <div class="video">
+                    <iframe  src="https://www.youtube-nocookie.com/embed/0cj71zkW-88" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+                <div class="about-video">
+                    <h4>Video Tutorial</h4>
+                    <p>This video tutorial guide how to use this website in more efficient manner. This video may also assist you in finding the solutions of your queries regarding the website. If your query will not be solved than you can contact our support team though e-mail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="top">
+            <div class="left-side">
+                <ul class="contact">
+                    <li><a href="#"><i class="fa fa-map-marker"></i>SCO-75, Chandigarh, India</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>+919797979733</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>support@moviemania.com</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <div class="about">
+                    <h4>About the website</h4>
+                    <p>This website provides the direct links to watch any movie anytime for Free. We believe that our customers deserves the highest quility of movies and we are committed for that.</p>
+                </div>
+                <div class="social-container">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p><a href="#">&copy 2020 Copyright: Moviemania.com</a></p>
+        </div>
+    </footer>
+    <!-- bootstrap js strat -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--bootstrap js end-->
+</body>
+</html>
