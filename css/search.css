@@ -1,0 +1,71 @@
+main {
+    padding:32px;
+}
+main .search-container button{
+    margin-top:16px;
+}
+main .search-item {
+    text-align: center;
+    padding-top:24px;
+}
+main .search-item i.fa-archive {
+    font-size: 10rem;
+}
+main .search-item .search-heading,main .search-item i.fa-archive{
+    color:#888;
+}
+main .search-item .search-heading {
+    margin-top:16px;
+}
+@media(max-width:400px) {
+    main .search-item .search-heading {
+        font-size: 1.75rem;
+    }
+}
+td,th {
+    text-transform: capitalize;
+}
+a:hover {
+    text-decoration: none;
+}
+main .search-result {
+    display:none;
+}
+main .search-result h2 {
+    margin: 32px 0px 24px;
+    text-transform: capitalize;
+}
+main .search-result table {
+    width:100%;
+    margin-bottom: 32px;
+}
+main .search-result table thead{
+    background-color: #223336;
+    color:white;
+}
+main .search-result table td, main .search-result table th {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding:12px;
+}
+main .search-result table td {
+    font-weight: 500;
+}
+main .search-result table tbody tr td:first-child img{
+    height:100px;
+    width:100px;
+}
+main .search-result table tbody tr:hover {
+    background-color: #eee;
+    cursor:initial;
+}
+@media(max-width:560px) {
+    main .search-result table thead tr th:nth-child(3),main .search-result table thead tr th:nth-child(4),main .search-result table tbody tr td:nth-child(3),main .search-result table tbody tr td:nth-child(4) {
+        display:none;
+    }
+}
+@media(max-width:400px) {
+    main .search-result table thead tr th:nth-child(1),main .search-result table tbody tr td:nth-child(1) {
+        display:none;
+    }
+}
