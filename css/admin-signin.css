@@ -1,0 +1,101 @@
+main  {
+    background-image: url('../images/background.png');
+    position: relative;
+    background-size: 100% 1280px;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .image img{
+    height:120px;
+    width:120px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    animation:motion;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes motion {
+    form {
+        right:0;
+    }
+    to {
+        right:100%;
+    }
+}
+main .admin-form {
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px #263236;
+    padding:32px;
+    border-radius: 4%;
+}
+main .admin-form h2 {
+    margin-bottom:24px;
+}
+main form div.input {
+    display:inline-block;
+    background-color: #ddd;
+    width:250px;
+    margin:4px auto;
+    padding:8px;
+    border-radius:18px;
+}
+main form div.input i {
+    margin-right:4px;
+}
+main form div.input input {
+    background-color: #ddd;
+    border:none;
+    outline:none;
+    font-weight: 500;
+}
+main form button {
+    background-color: #0baa0b;
+    border:none;
+    color:#eee;
+    width:250px;
+    padding:8px;
+    border-radius: 16px;
+    margin:16px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+main p a {
+    font-size:smaller;
+    color:#aaa;
+    text-decoration: none;
+}
+main form button:hover {
+    background-color:green;
+}
+main form button:active {
+    outline:none;
+}
+main p a:hover {
+    text-decoration:none;
+    color:#000;
+} 
+
+main .welcome {
+    font-size: 64px;
+    text-align: center;
+    font-family: serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+main .welcome span {
+    display:block;
+    font-family: serif;
+}
+@media(max-width:1000px) {
+    main {
+        background-size: 1000px 1280px;
+    }
+    main .admin-form {
+        padding:16px;
+    }
+}

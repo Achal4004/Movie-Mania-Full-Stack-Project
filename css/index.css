@@ -1,0 +1,206 @@
+main div.banner {
+    background-image: linear-gradient(to right,#263238,#555,#aaa);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+main .banner img{
+    height:93vh;
+    opacity:45%;
+    width:100%;
+    min-width:1200px;
+}
+main .heading-1 {
+    position: absolute;
+    bottom: 40vh;
+    left:0px;
+    color:white;
+    width:100%;
+    text-align: center;
+    padding:16px;
+}
+main .heading-1 p {
+    font-size: large;
+    width:80%;
+    margin:auto;
+}
+main .heading-1 a {
+    margin-top:10px;
+}
+main .heading-1 a i {
+    margin-left:10px;
+}
+main .features {
+    padding:48px 32px;
+}
+main .features h2{
+    text-align: center;
+    margin-bottom:48px;
+}
+main .features ul.feature-list {
+    list-style: none;
+    display: flex;;
+    justify-content: space-evenly;
+}
+main .features ul.feature-list li{
+    text-align: center;
+    width: 25%;
+}
+main .features ul.feature-list li i {
+    color:#455a64;
+    margin-bottom: 24px;
+}
+main .team {
+    background-color: #263238;
+    padding: 48px 32px;
+}
+main .team h2{
+    text-align: center;
+    color:white;
+    margin-bottom: 48px;
+}
+main .team .team-members {
+    display:flex;
+    justify-content: space-evenly;
+}
+main .team .team-members .member img{
+    height: 250px;
+    width:250px;
+    border-radius: 2px;
+}
+main .team .team-members .member .about-member {
+    background-color: white;
+    width:230px;
+    position: relative;
+    left:10px;
+    bottom:48px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #1b2327;
+    padding:12px;
+    text-align: center;
+}
+main .team .team-members .member .about-member p {
+    font-size: smaller;
+    font-weight: 500;
+}
+main .team .team-members .member .about-member p:first-of-type {
+    color:crimson;
+}
+main .team .team-members .member .about-member .social {
+    display: flex;
+    justify-content: space-evenly;
+}
+main .team .team-members .member .about-member .social a {
+    color:#aaa;
+    transition: 0.4s;
+}
+main .team .team-members .member .about-member .social a:hover {
+    color:#263238;
+}
+main .team p{
+    text-align: center;
+}
+main .team p a {
+    color:#ccc;
+}
+main .video-tutorial-section {
+    padding: 48px 32px;   
+}
+main .video-tutorial-section .video-tutorial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .video-tutorial .video  {
+    width:45%;
+    max-width:560px;
+}
+main .video-tutorial .video iframe{
+    height: 315px;
+    width:100%;
+}
+main .video-tutorial .about-video {
+    width:30%;
+    text-align: center;
+}
+main .video-tutorial-section h2 {
+    text-align: center;
+    margin-bottom:48px;
+}
+main .video-tutorial .about-video h4 {
+    margin-bottom:24px;
+}
+@media(max-width:1023px) {
+    main .banner img {
+        height: initial;
+        max-height: 93vh;
+    }
+    main .heading-1 {
+        bottom: 64px;
+    }
+    main .video-tutorial-section .video-tutorial {
+        flex-direction: column;
+    } 
+    main .video-tutorial .video {
+        width:65%;
+        margin-bottom: 32px;
+    }
+    main .video-tutorial .about-video {
+        width:60%;
+    }
+}
+@media(max-width:930px) {
+    main .heading-1 {
+        bottom:100px;
+    }
+    main .team .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .team .team-members .member{
+        display:inline-block;
+        width:fit-content;
+    }
+}
+@media(max-width:760px){
+    main .heading-1 p {
+        width:90%;
+    }
+    main .features ul.feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .features ul.feature-list li {
+        width:65%;
+        margin-bottom:32px;
+    }
+    main .features ul.feature-list li:last-child {
+        margin-bottom: 0px;
+    }
+    main .video-tutorial .video iframe{
+        height:240px;
+    }
+}
+@media(max-width:479px) {
+    main .heading-1 p {
+        display: none;
+    }
+    main .features ul.feature-list li {
+        width:80%;
+    }
+    main .heading-1 {
+        bottom:180px;
+    }
+    main .features ul.feature-list li:last-child {
+        margin-bottom: 0px;
+    }
+    main .video-tutorial .video {
+        width:80%;
+    }
+    main .video-tutorial .video iframe{ 
+        height:180px;
+    }
+    main .video-tutorial .about-video {
+        width:80%;
+    }
+}
