@@ -1,0 +1,104 @@
+footer {
+    background-color: #263238;
+    min-width:280px;
+}
+footer ul {
+    list-style: none;
+}
+footer .top {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:48px 0px 0px;
+}
+footer .top .left-side {
+    width:320px;
+}
+footer .top .left-side .contact li a i {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:28px;
+    height:28px;
+    background-color: #455a64;
+    border-radius: 50%;
+    margin:0px 16px 16px 0px;
+    transition: 0.4s;
+}
+footer .top .left-side .contact li a:hover {
+    color:#ccc;
+    text-decoration: none;
+}
+footer a,footer h4{
+    color:white;
+}
+footer .top .right-side {
+    width:420px;
+}
+footer .top .right-side .about p {
+    color:#aaa;
+    padding: 20px 32px 0px 0px;
+}
+footer .top .right-side .social-container ul.social {
+    display:flex;
+}
+footer .top .right-side .social-container ul.social li a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #455a64;
+    width:28px;
+    height:28px;
+    margin:2px;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+footer .top .right-side .social-container ul.social li:nth-child(1) a:hover {
+    background-color: #3b5998;
+    color:white;
+    text-decoration: none;
+}
+footer .top .right-side .social-container ul.social li:nth-child(2) a:hover {
+    background-color: #55acee;
+    color:white;
+    text-decoration: none;
+}
+footer .top .right-side .social-container ul.social li:nth-child(3) a:hover {
+    background-color: #0077b5;
+    color:white;
+    text-decoration: none;
+}
+footer .top .right-side .social-container ul.social li:nth-child(4) a:hover {
+    background-color: #dc4e4a;
+    color:white;
+    text-decoration: none;
+}
+footer .bottom p {
+    text-align: center;
+    padding:16px;
+    margin-bottom: 0px;
+}
+footer .bottom a{
+    color:#777;
+    font-size:small;
+    cursor:pointer;
+    transition:0.4s;
+}
+footer .bottom a:hover {
+    color:#ccc;
+    text-decoration: none;
+}
+@media(max-width:859px) {
+    footer .top {
+        flex-direction: column-reverse;
+        justify-content: left;
+        margin-left: 32px;;
+        align-items: initial;
+    }
+    footer .top .contact {
+        margin-top: 24px;
+    }
+    footer .top .left-side,footer .top .right-side {
+        width:100%;
+    }
+}
